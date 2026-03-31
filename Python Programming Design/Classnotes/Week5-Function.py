@@ -97,4 +97,15 @@ avg1, high1, min1 = analyze_scores(score1)
 avg2, high2, min2 = analyze_scores(score2)
 print("The average, maximum scores and minimum scores for student 1 is {}, {}, {}:".format(avg1, high1, min2))
 print("The average, maximum scores and minimum scores for student 1 is {}, {}, {}:".format(avg2, high2, min2))
+print("#"*50)
+print()
 
+# 7. Define a function to quickly  return the maximum numbers among 3 numbers
+def find_maximum(n1, n2, n3):
+    # let's use the conditional statement if.. elif ... else to compare the 3 number
+    if n1 >= n2 and n1 >= n3:
+        return print("The maximum number is {}.".formal(n1))
+    elif n2 >= n1 and n2 >= n3:
+        return print("The maximum number is {}.".format(n2))
+    else:
+        return print("The maximum number is {}.".format(n3))
