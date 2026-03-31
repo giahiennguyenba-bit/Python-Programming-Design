@@ -109,3 +109,23 @@ def find_maximum(n1, n2, n3):
         return print("The maximum number is {}.".format(n2))
     else:
         return print("The maximum number is {}.".format(n3))
+
+# 9. Define a function to achieve a simple calculator
+# this function takes 2 number and 1 
+
+def calculator(a, b, op):
+    if op == "+":
+        return a + b
+    elif op == "-":
+        return a - b
+    elif op == "*":
+        return a * b
+    elif op == "/":
+        if b != 0:
+            return a / b
+        else:
+            return print("Zero is not to be divided")
+    else: 
+        return print("The operator is not supported!")
+         
+    
